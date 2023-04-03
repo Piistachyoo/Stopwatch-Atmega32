@@ -34,6 +34,11 @@ LCD is connected to port C and working in 4-bit mode, and is used to display cou
 
 Buzzer is connected to PB7 and is used to confirm state changes.
 
+**Peripherals used:**
+- DIO
+- External Interrupts
+- Timer1 (16 bit)
+
 ## Files
 
  - **Application:** Contains program main
