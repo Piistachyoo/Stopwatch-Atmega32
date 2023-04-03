@@ -2,6 +2,8 @@
 ## Project Description
 Project was consisted of a microcontroller (AVR Atmega32) connected to 2 pushbuttons on PD2 and PD3 for external interrupts, an LCD to show timer counts and a buzzer for user feedback.
 
+## Project Design
+
 #### The stopwatch is designed as a state machine with 3 states:
 
  1. stopwatch_idle
