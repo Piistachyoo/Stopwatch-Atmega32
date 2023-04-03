@@ -25,8 +25,11 @@ Pressing on **PB2** will change the program's state to **stopwatch_idle**, and r
  **All Configurations are available for change in /Application/application.h**
 
 PB1 is connected to external interrupt on PD2 and activates on rising edge to ensure timing starts when i release the button.
+
 PB2 is connected to external interrupt and activates on falling edge to ensure timing stops right when i click on the button.
+
 LCD is connected to port C and working in 4-bit mode, and is used to display counted time.
+
 Buzzer is connected to PB7 and is used to confirm state changes.
 
 ## Files
