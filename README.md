@@ -1,6 +1,6 @@
 # Stopwatch-Atmega32
 ## Project Description
-Project was consisted of a microcontroller (AVR Atmega32) connected to 2 pushbuttons on PD2 and PD3 for external interrupts, an LCD to show timer counts and a buzzer for user feedback.
+The project consisted of a microcontroller (AVR Atmega32) connected to 2 pushbuttons on PD2 and PD3 for external interrupts, an LCD to show timer counts, and a buzzer for user feedback.
 
 ## Project Design
 
@@ -16,9 +16,9 @@ If the program is in **stopwatch_on** state,  you can only press on **PB2**, the
 
 When you reach **stopwatch_pause** state, you will have 2 options,
 
-Pressing on **PB1** will change the program's state back to **stopwatch_on**, and the system will continue counting from where you stopped, and you will hear a **short beep** to confirm that state change is done.
+Pressing on **PB1** will change the program's state back to **stopwatch_on**, and the system will continue counting from where you stopped, and you will hear a **short beep** to confirm that the state change is done.
 
-Pressing on **PB2** will change the program's state to **stopwatch_idle**, and resets the stopwatch to it's original state, and you will hear a **long beep** to confirm that state change is done.
+Pressing on **PB2** will change the program's state to **stopwatch_idle**, and resets the stopwatch to its original state, and you will hear a **long beep** to confirm that the state change is done.
 
 
 
@@ -26,22 +26,22 @@ Pressing on **PB2** will change the program's state to **stopwatch_idle**, and r
 
  **All Configurations are available for change in /Application/application.h**
 
-PB1 is connected to external interrupt on PD2 and activates on rising edge to ensure timing starts when i release the button.
+PB1 is connected to an external interrupt on PD2 and activates on the rising edge to ensure timing starts when I release the button.
 
-PB2 is connected to external interrupt and activates on falling edge to ensure timing stops right when i click on the button.
+PB2 is connected to an external interrupt and activates on the falling edge to ensure timing stops right when I click on the button.
 
-LCD is connected to port C and working in 4-bit mode, and is used to display counted time.
+LCD is connected to port C and works in 4-bit mode, and is used to display counted time.
 
 Buzzer is connected to PB7 and is used to confirm state changes.
 
 **Peripherals used:**
 - DIO
 - External Interrupts
-- Timer1 (16 bit)
+- Timer1 (16-bit)
 
 ## Files
 
  - **Application:** Contains program main
- - **HAL:** Hardware architecture layer: contains software related to any on-board hardware element
+ - **HAL:** Hardware architecture layer: contains software related to any onboard hardware element
  - **MCAL:** Microcontroller architecture layer: contains software related to any peripheral inside the microcontroller
  - **Services:** Contains my data types and some bit math operations
